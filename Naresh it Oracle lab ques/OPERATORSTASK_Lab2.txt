@@ -1,0 +1,204 @@
+                                 OPERATORS TASK
+                               ==================
+
+Logical operators
+-----------------
+.In all relational databases if you want to define more than one 
+     condition in where clause then we must use either 
+            AND or by using OR operators.
+
+AND:-AND operator displays the record if both first condition & 
+====  second contion are true.
+
+OR:-OR operator is used to displays a record if either first 
+===   condition or second condition is true.
+
+
+
+eg:-Online shopping(searching for the products)
+
+--->Create a table laptops with sno,cname,price and mfd
+
+     SNO       CNAME              PRICE          MFD
+  --------- ----------        ----------      ---------
+       1       HP                68000        24-DEC-23
+       2      DELL               50000        12-AUG-24
+       3     LENOVO              40000        12-JAN-23
+       4       HP                44000        08-APR-22
+
+1.Write a query to display laptop detailes whose cname is HP and
+  price is more than 50000?
+
+--->Create a student1 table and insert the records as below.
+
+   sno      sname      sub1         sub2        sub3 
+  -----    -------    ------       ------      ------  
+    1      gowtham      72          18          24
+    2       kiran       60          50          45
+    3       raju        12          30          25
+    4       subbu       80          88          74
+
+
+2.by using above student table display the passed student records?
+
+---> total marks  :100
+---> pass mark is :35
+---> pass means student got 35 marks in all 3 subjects.
+---> fail means student got below 35 marks in any subject.
+
+3.by using above student table display the failed student records?
+  
+
+4.Write a query to display the employees whose clerks are getting
+   more than 1000 salary from emp table?
+
+5.Write a query to display the employees whose clerks are belongs 
+  to 20th department?
+
+Note:- In databases if we want to retrive multiple values within a 
+====     single column then we must use OR operator. 
+
+
+6.Write a query to display the all managers and clerks
+  from emp table?
+
+7.Write a query to display the employees whose are belongs to 
+         20,30,50,70,90 departments from emp table 
+                 by using OR operator?
+
+
+8.Write a query to display the emp record whose sal 
+   between 2450 and 3000 from emp table?
+            |
+ range of values are there go with AND
+
+
+9.Write a query to display the emp records whose joined in
+  1981 from emp table?
+
+
+
+-----------------------------------------------------------------------------------------------------
+Special operators
+=================
+1)In operator 
+-------------
+
+1.In:- It is used to pick the values one by one
+=====        from list of values. 
+                  or 
+it is used to compare column value with list of values.
+ 
+
+   we can also use in operator in place of OR operator.
+when we are retriving multiple values from the same column.
+in this case In operator performance is very high compared 
+to OR operator.
+ 
+.it avoids writing multi equality condition using OR operator.
+
+
+1.Write a query to display the employees whose are belongs to
+  20,30,50,70,90 from emp table by using in operator.
+
+2.Write a query to display the employee records whose names
+  are SMITH,JONES,KING from emp table?
+
+3.Write a query to display the employee records whose empnos
+  are 7902,7788,7900 from emp table?
+
+4.Write a query to display the employee records whose sal 
+  is 1250,3000,5000 from emp table?
+
+5.Write a query to display the employee records except 
+  MANAGERS and CLERKS from emp table?
+
+6.Write a query to display the employees who are belongs to other
+  than 10,20 from emp table?
+
+7.SQL>select * from emp
+      where deptno not in(10,20,null);
+
+o/p:no rows selected
+
+
+why not in operator does not work with null?
+============================================
+.not in operator internally uses iogical AND.
+
+Note:- Whenever we are using IN operator then internally database 
+====   servers uses logical OR.whenever we are using NOT IN operator
+       then database server internally useslogical AND that's why 
+       NOT IN does not work with null values. 
+
+
+-----------------------------------------------------------------------------------
+2)Between And operator
+------------------------
+2)Between:-This operator is used to retrive range of values from a
+========== table column.This operator is also called as Between….. And
+           operator.
+
+.it is used to compare column values with range of values.
+
+.in oracle Between operator work with number,date data type columns.
+ 
+
+
+1.Write a query to display the employees who are getting salary 
+         between 2000 to 5000 from emp table 
+              by using Between operator? 
+
+2.Write a query to display the employees who are getting salary 
+        not between 2000 - 5000 from emp table
+              by using Between operator?
+ 
+3.Write a query to display the employee records who joined 
+  in 1982 from emp table?
+
+4.Write a query to display the employee records except joined 
+  in 1981 from emp table?
+
+5 What is the o/p of the following
+  select ename,sal from emp where sal Between 5000 and 2000;
+  A.displays between 2000 & 5000 salaries
+  B.Error
+  C.No rows selected
+  D.None
+-----------------------------------------------------------------------------------------------------
+
+3)is null and is not null
+  -----------------------
+   These two operators used in where clause only.These two 
+operators are used to test weather a column having null 
+values or not.
+
+.for null comparision we must use is null operator.dont use = operator
+
+
+1.Write a query to display the employees who are not getting 
+  commission from emp table? 
+
+2.Write a query to display the employees who are getting commission
+   from emp table? 
+
+3.Write a query to display the employee record who are not having 
+  the manager from emp table?
+
+-----------------------------------------------------------------------------------
+NVL(),NVL2() functons
+--------------------
+
+1.Write a query to display ename, sal, comm, sal+comm of the
+   employees from emp table?
+
+2.Update the employee commission with in emp table by using nvl2()
+  based on following conditions?
+
+1.if comm-->null then update
+     comm-->500
+
+2.if comm-->not null then update
+     comm-->comm+500
+
+-----------------------------------------------------------------------------------

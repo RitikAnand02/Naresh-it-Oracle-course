@@ -1,0 +1,110 @@
+                           SQL EXAM PAPER
+                         ==================
+
+1. Write a query to display 2nd Maximum salary employee from
+   emp table By using analytical function dense_rank() or
+   by using corelated subquery?(5marks)
+                   
+   
+2.Write a query to delete duplicate rows from the 
+  following TEST table(5marks)
+ 
+          SNO
+      ----------
+           10
+           10
+           10
+           20
+           20
+           20
+           30
+           30
+           40
+           50
+
+3.Find state wise population  
+        from following Person table?(5marks)
+
+
+        PID         PNAME         STATE 
+      -------     ---------     --------   
+         1         SUBBARAO        AP
+         2         KIRAN           TS
+         3         RAJU            TS
+         4         ALLEN           MP
+         5         GOWTHAM         AP
+         6         SMITH           MH 
+         7         SCOTT           KA
+         8         SAI TEJA        AP
+
+4.Write a query to Display the duplicate records from the 
+  above TEST table?(5marks)
+
+
+5.Write a query to display the employees who are working
+  in the location Chicago from emp,dept tables by using
+             equi join or inner join?(5marks)
+
+
+6.Write a query to display the employee names and their manager names
+  from emp table by using self join?(5marks)
+
+
+7A.Write a query to display the employees who are getting more
+     salary than the highest paid employee in 20th
+            department from emp table?(3marks)
+
+
+7B.Write a query to display the employee records who are earning
+   more than BLAKE salary?(2marks)
+
+
+8.create the emp3 table with constraints based on following
+  conditions.(5marks)
+
+EMPNO      don't accept nulls and duplicates 
+
+ENAME      don't accept nulls
+
+GENDER     Must be M or F
+
+SAL        DEFAULT 5000
+
+
+9A.Set the job as MANAGER and increase the salary by 20% for employees 
+    whose name starts with 'A' and ends with 'S'?(3marks)
+
+
+9B.Write a query to display the employee records whose name 2nd
+   character is A?(2marks)
+
+10A.Find second occurrence of 'krishna' in the string
+   'krishna stami lord krishna jai krishna'?(2marks)
+
+10B.Write a query to create a new table emp1 from the existing table emp
+    without copying records?(3marks)
+
+
+11.Write a query to display year, number of employees per year 
+             in which more than one
+      employee was hired from emp table?(5marks)
+
+12.Write a query to display the male employees who are getting more salary 
+  than all the female employees in the following employee table?(5marks)
+
+SQL> select * from employee;
+
+     EMPNO ENAME      G        SAL
+---------- ---------- - ----------
+         1 deepika    f       4000
+         2 subbarao   m       5000
+         3 swapna     f       3000
+         4 gowtham    m       2000
+         5 kavya      f       2000
+
+
+
+
+
+
+

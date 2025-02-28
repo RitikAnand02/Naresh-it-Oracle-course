@@ -1,0 +1,158 @@
+                          SUB LANGUAGES TASK
+                       -----------------------
+
+1.Create a STUDENT table with the following columns.
+
+--->SNO
+--->SNAME
+--->GENDER
+--->FEE
+--->DOB
+
+2.What is the command to see the structure of the STUDENT table?
+
+3.insert the records into STUDENT table by using 3 ways.
+
+4.Write a query to display all data from STUDENT table?
+
+5.Write a query to display employee names and salaries 
+  from emp table?
+
+6.Write a query to display empno,ename,job,hiredate from
+  emp table?
+
+7.Write a query to display all the data from emp table?
+
+8.What are DDL commands?What is the purpose of create command?
+
+
+-----------------------------------------------------------------------------------
+.DDL stands for Data Defination Language
+.DDL command are used to define structure of the 
+ table.
+.The following are the DDL commands.
+1)Create                   
+2)Alter
+3)Drop                     
+4)Flashback                
+5)Truncate
+6)Purge
+7)Rename (orace 9i)
+
+1)Create:- it is used to create database objects like 
+  =======  tables, views,sequences,indexes,procedures,
+            functions...etc 
+
+NOTE:-By default DDL commands are auto commited.
+====
+
+What are DML commands
+.DML stands for Data Manipulation Language.
+.DML commands are used to manipulate data in a table.
+.Simply in DML we are dealing on data.
+.The following are the DML commands.
+1.Insert
+2.Update
+3.Delete
+4.Merge (oracle 9i)
+5.insert all
+
+
+1)Insert: It is used to insert data into a table.
+  ======
+Method1:-
+========
+insert into tablename values(value1,value2,.......);
+
+Method2:-(Using Substitutional operator)
+========
+
+&------>Enter value for
+
+Same like scanf function '&' is there in c language.i.e is used to read
+the values from the keyboard.
+
+Here also it is used to read the values from the keyboard.
+
+insert into tablename values(&col1,&col2.....);
+
+Method3:-(Skipping columns)
+========
+insert into tablename(col1,col2....)values(value1,value2....);
+
+-----------------------------------------------------------------------------------
+                          OPerators Task
+                        ===================
+
+2)Relational operators
+----------------------
+.Relational operators are also called as comparison operators.
+
+.Relational operators are used in where clause only.
+
+.every relational operator used to compare with 1 value.
+
+.Oracle sql having following relational operators.
+ =,<,<=,>,>=,<> or !=
+
+
+.Where clause is used to filtering the rows or resticting the 
+ records purpose we are using.
+
+1.Write a query to display the employee records whose 
+  salary is 3000?
+
+2.Write a query to display all managers from emp table?
+
+Note:-oracle is not a case sensitive language.But string comparision 
+====      is case sensitive.
+
+
+3.Write a query to display the employees who are getting more
+  than 2000 salary from emp table?
+
+4.Write a query to display the employees whose sal is 
+  3000 or more?
+
+5.Wrirte a query to display the employees who are belongs 
+  to 10th department from emp table?
+
+6.Write a query to display the  employee records whose 
+  name is SMITH?
+
+7.Write a query to display the employees except job 
+  as MANAGER from emp table?
+
+
+Note: Calender order is Ascending order
+====  1-JAN-2024   min date
+      2-JAN-2024
+      . 
+      .
+      31-dec-2024  max date 
+
+  
+8.Write a query to display the employee records who joined 
+  on 17th DECEMBER 1980 from emp table?
+
+9.Write a query to display the employee record who joined
+  after 1981 from emp table?
+
+10.Write a query to display the employee record who joined 
+   before 1981 from emp table?
+
+11.Write a query to display the employee record who joined after
+   november 1981 from emp table?
+
+12.Write a query to display the employees who are getting
+   more than 30000 annsal from emp table?
+
+Note:-Generally in all relational databases we are not allowed to use
+====     column aliasname in where clause.
+
+column aliasname:Is used to change column heading in final output.
+.to give column aliasname we use "AS" keyword.using "AS" keyword is 
+ optional.
+.to give column aliasname as multiple words use " ".
+.eg "ann sal"
+

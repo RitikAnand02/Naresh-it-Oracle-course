@@ -1,0 +1,12 @@
+SQL> alter session set "_ORACLE_SCRIPT"=true
+
+1what is sql ?
+2. difference between char and varchar2.
+3. DDL and DML command.
+4. difference between delete and truncate.
+5. one query on update command.
+6. what is nvl() function ?
+7. one query on relational operator.
+8. one query on or , in operator.
+9. what is null ?
+10. how to drop the table and retrive the table.

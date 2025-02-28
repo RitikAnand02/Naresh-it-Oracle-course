@@ -1,0 +1,128 @@
+                                OPERATORS TASK
+                            =====================
+
+4)like operator
+----------------
+4.like operator:-like operator is used to retrive data based on 
+================ specified pattern in where clause.
+
+.like operator performance is very high compare to oracle predefined 
+  searching functions.
+
+.In all databases along with like operator oracle provided 2 special
+ wild card charcters.these are having special meaning.
+
+1)% -> string or group of characters matching(replaces 0 or 
+       any no of characters)
+2)_ -> single character matching purpose(replaces 1 char)
+
+
+1.Write a query to display the employees whose ename start with M 
+  from emp table using like operator?
+
+2.Write a query to display the employees whose ename end with S from 
+  emp table using like operator?
+
+3.Write a query to display the employees whose name contain either
+  'AM' or 'AR' strings from emp table by using like operator
+
+
+4.Write a query to display the employee records whose name 2nd
+ character is A?
+
+5.Write a query to display the employee records whose name 3rd 
+  character is M?
+
+6.Write a query to display the employee records whose name has 4
+ letters?
+
+7.Write a query to display the employees who are getting 3 digit
+ salary?
+
+8.Write a query to display the employees who are joining in the year
+  81 from emp table using like operator?
+
+9.Write a query to display the employees who are joining in the 
+  month December from the emp table using like operator.
+
+10.Write a query to display the employees who are joining in 
+  JAN or DEC month?
+
+11.Write a query to display the employee records whose name started
+   and ended with S?
+
+12.Write a query to display the employee records whose name 
+   starting with VOWEL?
+
+13.Write a query to display the employees whose ename start 
+   with S_ from emp table using
+   like operator?
+
+note:- insert the records with ename as S_ubbu
+
+ANS:-
+====
+SQL> select * from emp where ename like 'S\_%' escape '\';
+
+
+-----------------------------------------------------------------------------------------------------
+
+1)Arthematic operators
+----------------------
+.Airthemetic operators are used in number,date datatype columns.
+
+.Aithmetic operators are used in select clause.Rarely we are
+ using in where clause.
+
+1.Write a query to display ename,sal,annsal from emp table?
+
+2.Calculate the experience of the all employees from emp table?
+
+calculation of experience of emp means :so many date functions are
+one date function is suitable for calculating exp i.e sysdate
+
+sysdate:it returns current date of the system in oracle date 
+=======    formatt.in oracle by default date formatt
+                        is DD-MON-YY
+
+3.Calculate TA,HRA,TAX and GROSS from emp table based on
+  following condintions?
+
+10% on sal=>TA
+20% on sal=>HRA
+5% on sal=>TAx
+GROSS =SAL+TA+HRA-TAX
+
+[TA--->Total Allowance  HRA--->House Rent Allowances   GROSS--->Total sal]
+
+4.Write a query to display the all employee salaries after 
+  adding 1200 rupees?
+
+
+Q)calculate the total marks of students from student table?
+
+Q)calculate the average marks of students from student table?
+
+-----------------------------------------------------------------------------------
+concatination operator
+----------------------
+1.display the output as following from emp table by using 
+  concatination operator
+   SMITH earns 2000
+   ALLEN earns 3600
+
+2.display the output as following from emp table by using 
+  concatination operator 
+   SMITH  works as CLERK
+   ALLEN  works as SALESMAN
+
+3.combine the two strings NARESH,IT
+
+------------------------------------------------------------------------------------------------------
+mixed query
+-----------
+1.Write a query To display employee who are working as a 
+  MANAGER,CLERK and 
+  earning salary between 1500 and 3000 and
+  joined in 1981 year and not 
+  working in deptno 10 or 20?
