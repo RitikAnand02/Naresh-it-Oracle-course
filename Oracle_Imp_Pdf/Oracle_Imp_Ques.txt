@@ -1,4 +1,15 @@
 SQL> alter session set "_ORACLE_SCRIPT"=true
+Orcale 
+---------
+username :- system
+password :- 1234
+-----------------------
+
+MySql
+--------
+username :- root
+password :- 1234
+-----------------------
 
 1what is sql ?
 2. difference between char and varchar2.
